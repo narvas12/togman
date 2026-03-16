@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
@@ -21,17 +22,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 bg-forest rounded-lg flex items-center justify-center text-white font-bold text-lg group-hover:bg-forest-light transition-colors">
-              T
-            </div>
-            <div className="flex flex-col">
-              <span className="text-lg font-bold text-forest leading-tight">
-                Togman
-              </span>
-              <span className="text-[10px] text-slate uppercase tracking-widest leading-tight">
-                Technologies
-              </span>
-            </div>
+            <Image
+              src="https://res.cloudinary.com/deioo5lrm/image/upload/v1773663796/LOGO_2_r0q6au.png"
+              alt="Togman Technologies Logo"
+              width={140}
+              height={48}
+              className="h-10 w-auto object-contain"
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}

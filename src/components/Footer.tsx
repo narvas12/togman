@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,16 +8,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center text-white font-bold text-lg">
-                T
-              </div>
-              <div className="flex flex-col">
-                <span className="text-lg font-bold leading-tight">Togman</span>
-                <span className="text-[10px] text-sage-light uppercase tracking-widest leading-tight">
-                  Technologies
-                </span>
-              </div>
+            <div className="mb-4">
+              <Image
+                src="https://res.cloudinary.com/deioo5lrm/image/upload/v1773663796/LOGO_2_r0q6au.png"
+                alt="Togman Technologies Logo"
+                width={140}
+                height={48}
+                className="h-10 w-auto object-contain brightness-0 invert"
+              />
             </div>
             <p className="text-sm text-sage-light/80 leading-relaxed">
               Building scalable technology infrastructure for organizational
