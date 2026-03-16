@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-forest: #C2660A;
-  --color-forest-dark: #9A4F08;
-  --color-forest-light: #E67E22;
+  --color-forest: #DD571C;
+  --color-forest-dark: #B84516;
+  --color-forest-light: #E87840;
   --color-sage: #D4A574;
   --color-sage-light: #E8C9A0;
   --color-mint: #FFF3E0;
